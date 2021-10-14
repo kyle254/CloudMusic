@@ -1,0 +1,45 @@
+@import "variable.styl"
+
+body, html
+  line-height: 1
+  font-family: 'PingFang SC', 'STHeitiSC-Light', 'Helvetica-Light', arial, sans-serif, 'Droid Sans Fallback'
+  user-select: none
+  -webkit-tap-highlight-color: transparent
+  background: #222
+  color: #fbfcfd
+
+.text-overflow
+  display block
+  max-width 100%
+  overflow hidden
+  text-overflow ellipsis
+  white-space nowrap
+
+.father-web
+  width 100%
+  position fixed!important
+  top 152px!important
+  bottom 0
+  background #fbfcfd
+
+.son-web
+  position fixed!important
+  top 0!important
+  bottom 0
+  left 0
+  right 0
+  z-index 100
+  background $color-background
+
+.scroll-box
+  height: 100%
+  overflow hidden
+
+.nowShow
+  position relative
+  z-index 999
+
+.slideLeft-enter-active,.slideLeft-leave-active
+    transition all .3s
+.slideLeft-enter,.slideLeft-leave-to
+    transform translateX(100%)
